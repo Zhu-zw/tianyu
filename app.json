@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/order/order",
+    "pages/chat/chat",
+    "pages/member/member",
+    "pages/chat-interface/chat-interface",
+    "pages/details/details"
+  ],
+  "tabBar": { 
+    "color": "#ccc", 
+    "borderStyle": "black", 
+    "selectedColor": "#007cc2", 
+    "list": [ 
+      {
+        "pagePath": "pages/index/index",  
+        "text": "首页", 
+        "iconPath":"image/home.png",
+				"selectedIconPath":"image/home-active.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "聊天",
+        "iconPath":"image/news.png",
+        "selectedIconPath":"image/news-active.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "会员",
+        "iconPath":"image/member.png",
+        "selectedIconPath":"image/member-active.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "汽车配件门店",
+    "navigationBarTextStyle":"black"
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

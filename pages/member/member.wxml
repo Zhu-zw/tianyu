@@ -1,0 +1,126 @@
+<!--pages/member/member.wxml-->
+	<view>
+		
+		<view class="top">
+			
+			<view class="portrait">
+				<image src="../../image/portrait02.jpg"></image>
+			</view>
+			
+			<view class="username">
+				<view class="username-p1">用户名称1541545154</view>
+				<view class="username-p2">修改资料</view>
+			</view>
+			
+			<view class="shopping-cart">
+				<view>购物车</view>
+			</view>
+			
+		</view>
+		
+		<view class="order">
+			
+			<view class="order-top">
+				<view class="order-my">我的订单</view>
+				<view class="order-all">查看全部{{'>>'}}</view>
+			</view>
+			
+			<view class="order-content">
+				<ul class="order-con">
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-daifukuan"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">待付款</view>
+						</view>
+					</li>
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-fenxiang-copy"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">待分享</view>
+						</view>
+					</li>
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-shijian"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">待发货</view>
+						</view>
+					</li>
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-daishouhuo-"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">待收货</view>
+						</view>
+					</li>
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-daipingjia"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">待评价</view>
+						</view>
+					</li>
+				</ul>
+			</view>
+			
+		</view>
+		
+		<view class="order">
+			
+			<view class="order-content">
+				<ul class="order-con2">
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-youhuiquan"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">优惠券</view>
+						</view>
+					</li>
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-shoucang"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">商品收藏</view>
+						</view>
+					</li>
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-jilu"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">浏览历史</view>
+						</view>
+					</li>
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-shouhou"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">退款售后</view>
+						</view>
+					</li>
+					<li>
+						<view class="ord-p1">
+							<view class="iconfont icon-pingjia"></view>
+						</view>
+						<view class="ord-p2">
+						 <view class="font4">我的评价</view>
+						</view>
+					</li>
+				
+				</ul>
+			</view>
+			
+		</view>
+		
+		
+	</view>

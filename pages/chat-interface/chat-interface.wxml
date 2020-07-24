@@ -1,0 +1,67 @@
+<!--pages/chat-interface/chat-interface.wxml-->
+<view class="content" id="content">
+		<scroll-view id="scrollview" class="chat-window" scroll-y="true" :scroll-top="scrollTop">
+			
+			<view class="small-talk_time">12:18</view>
+			
+			<!-- 聊天内容 -->
+			<view class="content-all">
+				
+				<!-- 聊天窗口 -->
+				<view class="m-item">
+					
+					<!-- 收信人 -->
+					<view class="talk-left" >
+						
+						<!-- 收信人头像 -->
+						<view class="talk-photo-left">
+						    <image src="../../image/portrait01.png" class="talk-img"></image>
+						</view>
+						
+						<view class="triangle1"></view>
+						
+						<!-- 收信人消息 -->
+						<view class="talk-content-left">
+						    <!-- <view class="talk-huge"></view> -->
+						    <view class="talk-title-left">
+								<view>55555555555555555555555555555555555</view>
+							</view>
+						</view>
+					</view>
+					
+					<view class="talk-right">
+						
+						
+						<!-- 发信人头像 -->
+						<view class="talk-photo-right">
+						    <image src="../../image/portrait02.jpg" class="talk-img"></image>
+						</view>
+						
+						<view class="triangle2"></view>
+						
+						<!-- 发信人消息 -->
+						<view class="talk-content-right">
+						    <view class="talk-title-right">
+								<view>66666666</view>
+							</view>
+						    <!-- <view class="talk-huge"></view> -->
+						</view>
+						
+						
+					</view>	
+				</view>
+				
+			</view>
+		</scroll-view>
+		
+		<view class="foot">
+			
+			<input type="text" value="" placeholder="" class="chat-input" />
+			<view class="chat-btn">
+				<image src="../../image/chat-btn.jpg"></image>
+			</view>
+			<view class="send-out">发送</view>
+			
+		</view>
+		
+	</view>

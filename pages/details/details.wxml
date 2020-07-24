@@ -1,0 +1,121 @@
+<!--pages/details/details.wxml-->
+<view class="content">
+
+  <scroll-view scroll-y="true" style="height:92%">
+
+    <view class="con-window">
+			<image class="con-image" src="../../image/commodity.png"></image>
+		</view>
+		
+		<view class="price">￥100.00</view>
+		
+		<view class="explain">
+			<view class="ex-v1">助力泵</view>
+      <view class="ex-v2">电装铱铂金花塞SC20HR11丰田卡罗拉逸动新威驰，铱铂金花塞SC20HR11丰田</view>
+		</view>
+		
+		<view class="information">
+			
+			<view>
+				<view class="inf-width">
+					<view class="inf-v1">原厂编码：</view>
+          <view class="inf-v1">56110265AD154</view>
+				</view>
+			</view>
+			<view>
+				<view class="inf-width">
+					<view class="inf-v1">厂家编号：</view>
+          <view class="inf-v1">56110265AD154</view>
+				</view>
+			</view>
+			<view>
+				<view class="inf-width">
+					<view class="inf-v1">配件品质：</view>
+          <view class="inf-v1">品牌件（全新下线）</view>
+				</view>
+			</view>
+			<view>
+				<view class="inf-width">
+					<view class="inf-v1">质保时间：</view>
+          <view class="inf-v1">365天</view>
+				</view>
+			</view>
+			
+		</view>
+		
+		<view class="guarantee">
+			<view style="width:80%;float:left">
+        <view class="gua-v1">售后</view>
+        <view class="gua-v2">假一赔十</view>
+        <view class="gua-v2">七天可退货</view>
+      </view>
+
+      <view style="width:80%;margin-top:20rpx;float:left">
+        <view class="gua-v1">领劵</view>
+        <view class="gua-v2">满100减10</view>
+      </view>
+		</view>
+
+    <view class="pickup">
+      <view style="float:left">取货方式：</view>
+      <view class="mode" id="express">待发快递</view>
+      <view class="mode" id="raising">到店自提</view>
+      <view class="mode" id="delivery">送货上门</view>
+    </view>
+    <view class="service">
+      <view style="float:left">服务门店：</view>
+      <view class="store">恒福路店</view>
+      <view class="replace">更换门店{{'>>'}}</view>
+    </view>
+
+    <view class="car-model">
+      <view style="float:left">适用车型：</view>
+      <view>对方水电费水电费是的的范德萨发乎的说法忽视的附件撒大黄蜂撒谎的符号是豆腐花水电费</view>
+    </view>
+
+    <view class="product">
+      <view style="text-align:center;color:#cbcaca">产品说明</view>
+      <view style="margin-top:20rpx">广汽本田雅阁2.3助力泵、方向机助力泵，原装正版广汽本田雅阁2.3助力泵、方向机助力泵，原装正版广汽本田雅阁2.3助力泵、方向机助力泵，原装正版</view>
+    </view>
+
+  </scroll-view>
+  
+  <view class="foot">
+
+    <view class="foot-left">
+
+      <view class="foot-back">
+        <view class="foot-img">
+          <image src="../../image/home.png"></image>
+        </view>
+        <view class="foot-font1">首页</view>
+      </view>
+
+      <view class="foot-back">
+        <view class="foot-img">
+          <image src="../../image/love.png"></image>
+        </view>
+        <view class="foot-font1">收藏</view>
+      </view>
+
+      <view class="foot-back">
+        <view class="foot-img">
+          <image src="../../image/news.png"></image>
+        </view>
+        <view class="foot-font1">客服</view>
+      </view>
+    </view>
+
+      <view class="foot-right">
+        <navigator  url="../order/order" open-type="navigate">
+          <view class="foot-font2">￥90.00</view>
+          <view class="foot-font2">立即优惠下单</view>
+        </navigator>
+      </view>
+   
+  </view>
+		
+
+		
+		
+	</view>

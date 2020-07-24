@@ -1,0 +1,71 @@
+<!--pages/order/order.wxml-->
+<view class="content">
+  <scroll-view scroll-y="true" style="height:92%">
+    <view class="address">
+    <view class="add-left">
+      <view class="order-font1">收货地址</view>
+      <view class="order-font2">张朝阳</view>
+      <view class="order-font2">18928800356</view>
+      <view class="order-font2">广东省广州市白云区太和镇老街北路5巷1001号</view>
+    </view>
+    <view id="add-right">
+      {{">"}}
+    </view>
+  </view>
+
+  <view class="pickup">
+    <view class="order-font1">请选择取货方式：</view>
+    <!-- <view class="order-font3" id="express">待发快递</view>
+    <view class="order-font3" id="raising">到店自提</view>
+    <view class="order-font3" id="delivery">送货上门</view> -->
+
+  <checkbox-group name="checkbox" class="check">
+    <label bindtap='clicks' wx:for="{{checks}}" wx:key="{{checks}}" wx:for-index="index" data-index="{{index}}" class='{{item.checked?"is_checked":""}}'>
+      <checkbox value="{{item.name}}" data-val="{{item.name}}" hidden='false' checked='{{item.checked}}' /> {{item.name}}
+    </label>
+  </checkbox-group>
+
+  </view>
+
+  <view class="service">
+    <view class="order-font1">服务门店</view>
+    <view class="iconfont icon-dingwei"></view>
+    <view class="service-add">
+      <view class="order-font4">广州市天域汽车门店</view>
+      <view class="order-font4">广东省广州市越秀区金贵村战旁双燕汽贸园2层1032号</view>
+    </view>
+    <view class="change">更换</view>
+  </view>
+    
+  <view class="payment">
+    <view class="pay-wx">
+      <!-- <radio>微信支付</radio> -->
+      <radio-group class="radio-group" bindchange="radioChange">
+          <radio  class="radio" bindtap = "bindtap1" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked = "{{item.checked}}">
+              <text>{{item.value}}</text>
+          </radio>
+      </radio-group>
+    </view>
+  </view>
+
+  <view class="pay-info">
+    <view class="pay-font1">
+      <view>订单金额：<text style="color:red">￥100.00</text></view>
+    </view>
+    <view class="pay-font1">
+      <view>优惠金额：<text style="color:red">￥10.00</text></view>
+    </view>
+    <view class="pay-font1">
+      <view>配送金额：<text style="color:red">￥15.00</text></view>
+    </view>
+  </view>
+  </scroll-view>
+
+  <view class="foot">
+    <view class="total">合计：</view>
+    <view class="price">￥105.00</view>
+    <view class="pay">去支付</view>
+  </view>
+  
+
+</view>

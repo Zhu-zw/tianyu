@@ -1,0 +1,27 @@
+<!--pages/chat/chat.wxml-->
+<view>
+
+  <view>
+
+    <navigator url="../chat-interface/chat-interface">
+      <view class="chat-list">
+  
+      <view class="chat_img">
+        <image class="img" src="../../image/portrait01.png"></image>
+      </view>
+  
+      <view class="chat-box">
+        <view class="customer1">客户151854216485165845641</view>
+        <view class="customer2">777777777777777777777777</view>
+      </view>
+  
+      <view class="right">
+        <view class="time">21:00</view>
+        <view class="news">1</view>
+      </view>
+
+    </view>
+    </navigator>
+
+  </view>
+</view>

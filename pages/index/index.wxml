@@ -1,0 +1,102 @@
+<!--index.wxml-->
+	<view>
+		
+		<view class="font1">尊敬的<span>天域用户</span>，您好</view>
+		
+		<view id="home-top1">
+			<image src="../../image/top.jpg"></image>
+		</view>
+		
+		<view id="home-top2">
+			<view class="location">
+        <view class="iconfont icon-dingwei" style="width:60rpx;float:left;margin-top:10rpx;margin-left:15px;color:#007cc2"></view>
+        <view class="loc-font1">广东省广州市越秀区金贵村站旁双燕汽贸园</view>
+      </view>
+				<view class="member">
+					<image src="../../image/sign_store_bg.png"></image>
+				</view>
+		</view>
+		
+		<view class="search">
+			
+			<view>
+				<input type="text" value="" placeholder="" class="search-input" />
+				<view class="search-btn">
+					<span class="iconfont icon-sousuo"></span>
+					<p style="font-size: 25rpx;text-align: center;">搜索</p>
+				</view>
+			</view>
+		</view>
+
+
+<view class="container">
+  <view class='content'>
+    <view class="box">
+
+      <view class="left">
+        <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" scroll-top="{{scrollTopLeft}}">
+          <view wx:for="{{list}}" data-index="{{index}}" bindtap="toScrollView">
+            <view class="left-item {{selectedSub==index?'left-active':''}}">{{item.title}}</view>
+          </view>
+        </scroll-view>
+      </view>
+
+      <view class="right">
+        <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" scroll-into-view="{{toView}}" scroll-top="0" bindscroll="scrollTo" scroll-with-animation>
+          <view wx:for="{{list}}" id="position{{index}}" wx:for-item="itemName"> 
+            <view class="right-item">
+              <view wx:for="{{itemName.list}}">
+                <view class="flex" style="height:120px;width:100%;">
+                  <navigator url="../details/details" open-type="navigate">
+                    <view class="flex-left">
+                      <view>{{item.sp_name}}11111</view>
+                      <image src="../../image/fdj.png" class="flex-image1"></image>
+                      <view class="font2">
+                        <view>车型：B本田(广汽)</view>
+                        <view>分类：发动机</view>
+                        <view>型号：11128513755</view>
+                        <view>品质：全新品牌件</view>
+                      </view>
+                      <view class="font3">￥398.00</view>
+                    </view>
+                  </navigator>
+
+                  <view class="flex-right">
+                    <image src="../../image/add.jpg"></image>
+                  </view>
+                  
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+		
+		<view class="place-order">
+			
+			<view class="order">
+				<view >
+          <view class="shopping-img"><image src="../../image/shopping-cart.jpg"></image></view>
+				  <view class="shopping-price"><p>¥77.0</p></view>
+				  <view class="choice-y">选好了</view>
+        </view>
+				
+
+        <scroll-view scroll-y="true" style="height:250%">
+          <view>
+            <!-- 购物车数据 -->
+
+          </view>
+        </scroll-view>
+				
+			</view>
+			
+		</view>
+		
+	</view>
+	
